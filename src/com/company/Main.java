@@ -7,6 +7,6 @@ public class Main {
         System.out.println("Hej Christine");
         System.out.println("Virker always?");
         System.out.println("Hej Caro");
-        System.out.println("heeey");
+        System.out.println("heeey anna ");
     }
 }
