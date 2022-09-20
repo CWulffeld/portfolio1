@@ -40,14 +40,23 @@ public containerVessel(String flagNation, int length, int width, int nowContaine
     @Override
     public void loadingCargo() {
         int containerAmount = maxContainer - nowContainer;
-        System.out.println("Maximum capacity of container on the vessel: " + maxContainer);
-       /*Scanner scanner = new Scanner(System.in);
-        System.out.println("Set number to load on vessel: ");
-       int number = scanner.nextInt();
-        this.nowContainer = number;*/
+        System.out.println("Maximum capacity of containers on the vessel: " + maxContainer);
+        System.out.println("Amount of containers on the container vessel: " + nowContainer);
+        System.out.println("Amount of containers on the container vessel space left: " + containerAmount);
 
-        System.out.println("Amount of container on the container vessel: " + this.nowContainer);
-        System.out.println("Amount of container on the container vessel space left: " + containerAmount);
+    }
+
+    @Override
+    public void loadingCargo(int cargo1, int cargo2){
+    }
+
+    @Override
+    public void loadingCargo(String flagNation,int aDraft , int length, int width ){
+        super.flagNation = flagNation;
+        super.aDraft = aDraft;
+        super.length = length;
+        super.width = width;
+        System.out.println("FlagNation: " + flagNation);
     }
 
 
