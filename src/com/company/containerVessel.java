@@ -11,11 +11,11 @@ public class containerVessel extends Vessel{
     int containerLength;
 
 
-public containerVessel(String flagNation, int length, int width, int nowContainer){
+public containerVessel(){
     super.flagNation= flagNation;
     super.length = length;
     super.width = width;
-    this.nowContainer = nowContainer;
+   // this.nowContainer = nowContainer;
     this.maxContainer = 10;
     this.containerLength = 10;
     this.containerWidth = 15;
@@ -26,19 +26,17 @@ public containerVessel(String flagNation, int length, int width, int nowContaine
 //The method loadingCargo() is used to set relevant information for vessels
     // and make the cargo amount accessible through methods.
    /* @Override
-    public void loadingCargo(String flagNation, int length, int width, int nowContainer, int maxContainer) {
-        super.flagNation= flagNation;
-        super.length = length;
-        super.width = width;
+    public void loadingCargo(int nowContainer) {
         this.nowContainer = nowContainer;
-        this.maxContainer = maxContainer;
+        this.maxContainer = 10;
     }*/
 
 
-
-
+    //The method loadingCargo() is used to set relevant information for vessels
+    // and make the cargo amount accessible through methods.
     @Override
-    public void loadingCargo() {
+    public void loadingCargo(int container) {
+        nowContainer = container;
         int containerAmount = maxContainer - nowContainer;
         System.out.println("Maximum capacity of containers on the vessel: " + maxContainer);
         System.out.println("Amount of containers on the container vessel: " + nowContainer);

@@ -12,7 +12,7 @@ public class Tankers extends Vessel{
     }
 
     @Override
-    public void loadingCargo(){
+    public void loadingCargo(int cargo){
 
     }
 
@@ -34,5 +34,6 @@ public class Tankers extends Vessel{
     public void utilityLevelOfCapacity(){
 
     }
+
 
 }
