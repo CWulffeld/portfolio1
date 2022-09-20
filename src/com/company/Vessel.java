@@ -5,7 +5,6 @@ public abstract class Vessel {
     int aDraft;
     int length;
     int width;
-    int cargo;
 
     private int containerLength;
     private int containerWidth;

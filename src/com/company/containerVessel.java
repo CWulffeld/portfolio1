@@ -5,6 +5,9 @@ public class containerVessel extends Vessel{
     int cargo; //Kan indeholde specifikt antal af cargo (Måske det skal være protected)
     int nowContainer;
     int maxContainer;
+    int containerWidth;
+    int containerLength;
+
 
 
 
