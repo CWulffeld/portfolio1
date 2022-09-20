@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class containerVessel extends Vessel{
 
     int cargo; //Kan indeholde specifikt antal af cargo (Måske det skal være protected)
@@ -20,7 +22,8 @@ public containerVessel(String flagNation, int length, int width, int nowContaine
 
 }
 
-    //The method loadingCargo() is used to set relevant information for vessels
+
+//The method loadingCargo() is used to set relevant information for vessels
     // and make the cargo amount accessible through methods.
    /* @Override
     public void loadingCargo(String flagNation, int length, int width, int nowContainer, int maxContainer) {
@@ -33,12 +36,18 @@ public containerVessel(String flagNation, int length, int width, int nowContaine
 
 
 
+
     @Override
     public void loadingCargo() {
-        int containerAmount = this.maxContainer - this.nowContainer;
+        int containerAmount = maxContainer - nowContainer;
+        System.out.println("Maximum capacity of container on the vessel: " + maxContainer);
+       /*Scanner scanner = new Scanner(System.in);
+        System.out.println("Set number to load on vessel: ");
+       int number = scanner.nextInt();
+        this.nowContainer = number;*/
+
         System.out.println("Amount of container on the container vessel: " + this.nowContainer);
         System.out.println("Amount of container on the container vessel space left: " + containerAmount);
-        System.out.println(containerAmount);
     }
 
 
