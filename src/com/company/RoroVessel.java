@@ -9,8 +9,11 @@ public class RoroVessel extends Vessel {
     int truckLength = 30;
 
     @Override
-public void loadingCargo(){
+    public void loadingCargo(){
+    }
 
+    @Override
+    public void utilityLevelOfCapacity(){
     }
 
 

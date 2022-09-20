@@ -12,4 +12,9 @@ public class Tankers extends Vessel{
 
     }
 
+    @Override
+    public void utilityLevelOfCapacity(){
+
+    }
+
 }

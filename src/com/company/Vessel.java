@@ -9,36 +9,17 @@ public abstract class Vessel {
     private int containerLength;
     private int containerWidth;
 
-    public Vessel(){
-
-    }
-
-    public Vessel(String flagNation, int aDraft, int length, int width, int cargo) {
-        this.flagNation = flagNation;
-        this.aDraft = aDraft;
-        this.length = length;
-        this.width = width;
-        this.cargo = cargo;
-    }
-
-    public int getContainerLength() {
-        return containerLength;
-    }
-
-    public void setContainerLength(int containerLength) {
-        this.containerLength = containerLength;
-    }
-
-    public int getContainerWidth() {
-        return containerWidth;
-    }
-
-    public void setContainerWidth(int containerWidth) {
-        this.containerWidth = containerWidth;
-    }
-
-
+    //The method loadingCargo() is used to set relevant information for vessels
+    // and make the cargo amount accessible through methods.
     public abstract void loadingCargo();
 
+    //The method loadingCargo() is used to set relevant information for vessels
+    // and make the cargo amount accessible through methods.
+
+
+    //should compute the fraction of the total capacity that is used.
+    // For tankers a compartment is assumed to be utilized if it is
+    // not empty since it then cannot be used for other products.
+    public abstract void utilityLevelOfCapacity();
 
 }
