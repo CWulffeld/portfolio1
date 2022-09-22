@@ -7,14 +7,33 @@ public class Tankers extends Vessel{
     int maxCapacity = 10;
     int volume[] = new int[9];
 
-    @Override
-    public void loadingCargo(){
+    public Tankers(){
 
+    }
+
+    @Override
+    public void loadingCargo(int cargo){
+
+    }
+
+    @Override
+    public void loadingCargo(int cargo1, int cargo2){
+
+    }
+
+    @Override
+    public void loadingCargo(String flagNation,int aDraft , int length, int width ){
+        super.flagNation = flagNation;
+        super.aDraft = aDraft;
+        super.length = length;
+        super.width = width;
+        System.out.println("FlagNation: " + flagNation);
     }
 
     @Override
     public void utilityLevelOfCapacity(){
 
     }
+
 
 }

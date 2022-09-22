@@ -11,11 +11,11 @@ public class containerVessel extends Vessel{
     int containerLength;
 
 
-public containerVessel(String flagNation, int length, int width, int nowContainer){
+public containerVessel(){
     super.flagNation= flagNation;
     super.length = length;
     super.width = width;
-    this.nowContainer = nowContainer;
+   // this.nowContainer = nowContainer;
     this.maxContainer = 10;
     this.containerLength = 10;
     this.containerWidth = 15;
@@ -26,28 +26,35 @@ public containerVessel(String flagNation, int length, int width, int nowContaine
 //The method loadingCargo() is used to set relevant information for vessels
     // and make the cargo amount accessible through methods.
    /* @Override
-    public void loadingCargo(String flagNation, int length, int width, int nowContainer, int maxContainer) {
-        super.flagNation= flagNation;
-        super.length = length;
-        super.width = width;
+    public void loadingCargo(int nowContainer) {
         this.nowContainer = nowContainer;
-        this.maxContainer = maxContainer;
+        this.maxContainer = 10;
     }*/
 
 
+    //The method loadingCargo() is used to set relevant information for vessels
+    // and make the cargo amount accessible through methods.
+    @Override
+    public void loadingCargo(int container) {
+        nowContainer = container;
+        int containerAmount = maxContainer - nowContainer;
+        System.out.println("Maximum capacity of containers on the vessel: " + maxContainer);
+        System.out.println("Amount of containers on the container vessel: " + nowContainer);
+        System.out.println("Amount of containers on the container vessel space left: " + containerAmount);
 
+    }
 
     @Override
-    public void loadingCargo() {
-        int containerAmount = maxContainer - nowContainer;
-        System.out.println("Maximum capacity of container on the vessel: " + maxContainer);
-       /*Scanner scanner = new Scanner(System.in);
-        System.out.println("Set number to load on vessel: ");
-       int number = scanner.nextInt();
-        this.nowContainer = number;*/
+    public void loadingCargo(int cargo1, int cargo2){
+    }
 
-        System.out.println("Amount of container on the container vessel: " + this.nowContainer);
-        System.out.println("Amount of container on the container vessel space left: " + containerAmount);
+    @Override
+    public void loadingCargo(String flagNation,int aDraft , int length, int width ){
+        super.flagNation = flagNation;
+        super.aDraft = aDraft;
+        super.length = length;
+        super.width = width;
+        System.out.println("FlagNation: " + flagNation);
     }
 
 
