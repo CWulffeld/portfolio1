@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args){
 
 //Container Vessel
-
+/*
       containerVessel c = new containerVessel("DK", 10,10,10);
        c.getNowContainer();
 
@@ -14,23 +14,20 @@ public class Main {
         c.getNowContainer();
 
         c.loadingCargo(2);
-        c.getNowContainer();
+        c.getNowContainer();*/
 
 //Tankers
-        Tankers t = new Tankers("DE", 10, 10, 10);
-        t.getNowCapacity();
-
-        t.loadingCargo(8);
-        t.getNowCapacity();
+        Tankers t = new Tankers("DE", 10, 10, 10,8,5,5);
+     t.loadingCargo(4,3);
 
 
-
+/*
         RoroVessel r= new RoroVessel("DK",10,10,10,100,5,15);
         r.getCar();
         r.getTruck();
         r.getCargoAmount();
         r.loadingCargo(3,6);
-
+*/
       /*
 
 

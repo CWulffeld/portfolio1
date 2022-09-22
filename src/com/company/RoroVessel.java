@@ -3,7 +3,6 @@ package com.company;
 public class RoroVessel extends Vessel {
 
     private int totalAmountLaneMeters;
-
     private int car;
     private int truck;
     private int carLength = 8;

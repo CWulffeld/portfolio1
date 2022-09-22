@@ -3,10 +3,6 @@ package com.company;
 import java.util.Scanner;
 
 public class containerVessel extends Vessel{
-
-
-
-
     private int nowContainer;
     private int maxContainer;
     private int containerWidth;
