@@ -2,35 +2,51 @@ package com.company;
 
 public class RoroVessel extends Vessel {
 
-    int totalAmountLaneMeters;
-    int car;
-    int truck;
-    int carLength = 8;
-    int truckLength = 30;
+    private int totalAmountLaneMeters;
 
-    @Override
-    public void loadingCargo(int cargo){
+    private int car;
+    private int truck;
+    private int carLength = 8;
+    private int truckLength = 30;
 
-    }
 
-    @Override
-    public void loadingCargo(int cars, int trucks){
-    this.car = cars;
-    this.truck = trucks;
-        System.out.println("Ammount of cars: " + car);
-        System.out.println("Ammount of trucks: " + trucks);
-        System.out.println("Total amount: " + (car + truck));
-    }
-
-    @Override
-    public void loadingCargo(String flagNation,int aDraft , int length, int width ){
+    public RoroVessel(String flagNation,int aDraft , int length, int width,int totalAmountLaneMeters, int cars, int trucks ){
         super.flagNation = flagNation;
         super.aDraft = aDraft;
         super.length = length;
         super.width = width;
-        System.out.println("FlagNation: " + flagNation);
+        this.totalAmountLaneMeters = totalAmountLaneMeters;
+        this.car = cars;
+        this.truck = trucks;
     }
 
+    public int getCar() {
+        //sout skal slettes
+        System.out.println(car);
+        return car;
+    }
+
+    public int getTruck() {
+        //sout skal slettes
+        System.out.println(truck);
+        return truck;
+    }
+
+    public int getCargoAmount(){
+        //sout skal slettes
+        System.out.println(car + truck);
+       return car + truck;
+    }
+
+    public void loadingCargo(int cars, int trucks){
+    this.car = cars;
+    this.truck = trucks;
+
+    //linjerne nedenunder skal slettes
+        System.out.println("Amount of cars: " + car);
+        System.out.println("Amount of trucks: " + trucks);
+        System.out.println("Total amount: " + (car + truck));
+    }
 
     @Override
     public void utilityLevelOfCapacity(){

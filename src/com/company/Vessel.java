@@ -26,4 +26,8 @@ public abstract class Vessel {
     // not empty since it then cannot be used for other products.
     public abstract void utilityLevelOfCapacity();
 
+
+    // containervessel - capacity of containers -> udregn i procenttal.
+    // roro  - numbers cars x meters, numbers trucks x meters / total capaciy of metersoflanes
+    // capacity.. ?
 }

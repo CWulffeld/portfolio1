@@ -2,27 +2,13 @@ package com.company;
 
 public class Tankers extends Vessel{
 
-    //int compartments = 10;
-    int nowCapacity;
-    int maxCapacity = 10;
-    int volume[] = new int[9];
+    private int compartments = 10;
+    private int nowCapacity;
+    private int maxCapacity = 10;
+    private int volume[] = new int[9];
 
-    public Tankers(){
 
-    }
-
-    @Override
-    public void loadingCargo(int cargo){
-
-    }
-
-    @Override
-    public void loadingCargo(int cargo1, int cargo2){
-
-    }
-
-    @Override
-    public void loadingCargo(String flagNation,int aDraft , int length, int width ){
+   public Tankers (String flagNation,int aDraft , int length, int width ){
         super.flagNation = flagNation;
         super.aDraft = aDraft;
         super.length = length;
