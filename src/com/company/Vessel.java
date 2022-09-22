@@ -11,9 +11,9 @@ public abstract class Vessel {
 
     //The method loadingCargo() is used to set relevant information for vessels
     // and make the cargo amount accessible through methods.
-    public abstract void loadingCargo(int cargo);
-    public abstract void loadingCargo(int cargo1,int cargo2 );
-    public abstract void loadingCargo(String flagNation,int aDraft , int length, int width );
+    //public abstract void loadingCargo(int cargo);
+    //public abstract void loadingCargo(int cargo1,int cargo2 );
+    //public abstract void loadingCargo(String flagNation,int aDraft , int length, int width );
 
     //public abstract void loadingCargo(int cargo);
 
