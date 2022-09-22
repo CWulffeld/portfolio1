@@ -16,10 +16,26 @@ public class Tankers extends Vessel{
         System.out.println("FlagNation: " + flagNation);
     }
 
+    public int getNowCapacity(){
+        System.out.println(nowCapacity);
+        return nowCapacity;
+    }
+
+    public void loadingCargo(int compartment) {
+        nowCapacity = compartment;
+        //nedenstående slettes
+        int capacityAmount = maxCapacity - nowCapacity;
+        System.out.println("Max capacity on TV: " + maxCapacity);
+        System.out.println("amount of compartments on TV: " + nowCapacity);
+        System.out.println("amount of compartments left on TV: " + capacityAmount);
+
+    }
     @Override
     public void utilityLevelOfCapacity(){
 
     }
+
+
 
 
 }
