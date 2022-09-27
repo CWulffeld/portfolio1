@@ -21,8 +21,8 @@ public class Main {
         c.getNowContainer();*/
 
 //Tankers
-        Tankers t = new Tankers("DE", 10, 10, 10,8,5,5);
-     t.loadingCargo(4,3);
+     /*   Tankers t = new Tankers("DE", 10, 10, 10,8,5,5);
+     t.loadingCargo(4,3);/*
 
 
 /*
