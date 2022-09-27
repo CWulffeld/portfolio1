@@ -25,13 +25,15 @@ public class Main {
      t.loadingCargo(4,3);/*
 
 
-/*
-        RoroVessel r= new RoroVessel("DK",10,10,10,100,5,15);
+
+        RoroVessel r= new RoroVessel("DK",10,10,10,300);
         r.getCar();
         r.getTruck();
         r.getCargoAmount();
         r.loadingCargo(3,6);
-*/
+        r.utilityLevelOfCapacity();
+
+
       /*
 
 
