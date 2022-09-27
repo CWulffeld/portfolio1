@@ -46,7 +46,13 @@ public class Tankers extends Vessel{
     }
 
 
+    public void utilityLevelOfCapacity(){
+       nowCapacity = getNowCapacity();
+       int percent = nowCapacity * 100 / maxCapacity;
+        System.out.println("Procent" + percent + "%");
 
+
+    }
 
 
 
