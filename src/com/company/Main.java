@@ -6,6 +6,10 @@ public class Main {
     public static void main(String[] args){
 
 //Container Vessel
+
+        containerVessel c = new containerVessel("DK",10,20);
+        c.loadingCargo(4);
+        c.utilityLevelOfCapacity();
 /*
       containerVessel c = new containerVessel("DK", 10,10,10);
        c.getNowContainer();

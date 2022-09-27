@@ -25,8 +25,9 @@ public class Tankers extends Vessel{
     }
 
     public int getCompartments() {
-        return compartments;
+       return compartments;
     }
+
     public int getNowCapacity(){
         System.out.println(nowCapacity);
         return nowCapacity;
@@ -44,10 +45,7 @@ public class Tankers extends Vessel{
         System.out.println("Amount of compartments used " + (maxCompartment - compartments)); //total amount of comparmemt used
     }
 
-    @Override
-    public void utilityLevelOfCapacity(){
 
-    }
 
 
 

@@ -47,9 +47,7 @@ public class RoroVessel extends Vessel {
         System.out.println("Total amount: " + (car + truck));
     }
 
-    @Override
-    public void utilityLevelOfCapacity(){
-    }
+
 
 
 }

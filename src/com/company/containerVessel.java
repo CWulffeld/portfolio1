@@ -1,18 +1,16 @@
 package com.company;
 
-import java.util.Scanner;
-
 public class containerVessel extends Vessel{
     private int nowContainer;
     private int maxContainer;
     private int containerWidth;
     private int containerLength;
 
-
-public containerVessel(String flagNation, int length, int width, int nowContainer  ){
-    super.flagNation= flagNation;
-    super.length = length;
-    super.width = width;
+//Constructor
+public containerVessel(String flagNation, int length, int width){
+    super.flagNation= flagNation; //Fra Vessel (super klassen)
+    super.length = length; //Fra Vessel (super klassen)
+    super.width = width; //Fra Vessel (super klassen)
     this.nowContainer = nowContainer;
     this.maxContainer = 10;
 
@@ -23,7 +21,7 @@ public containerVessel(String flagNation, int length, int width, int nowContaine
 }
     public int getNowContainer() {
     //sout linje skal slettes
-        System.out.println(nowContainer);
+        //System.out.println(nowContainer);
         return nowContainer;
     }
 
@@ -45,8 +43,11 @@ public containerVessel(String flagNation, int length, int width, int nowContaine
 
     //should compute the fraction of the total capacity that is used.
     // For tankers a compartment is assumed to be utilized if it is not empty since it then cannot be used for other products.
-    @Override
+
     public void utilityLevelOfCapacity(){
+    nowContainer = getNowContainer();
+    int percent = nowContainer * 100 / maxContainer;
+        System.out.println("Procent " + percent + " %");
 
     }
 
