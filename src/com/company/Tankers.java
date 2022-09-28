@@ -45,7 +45,7 @@ public class Tankers extends Vessel{
         System.out.println("Amount of compartments used " + (maxCompartment - compartments)); //total amount of comparmemt used
     }
 
-
+    @Override
     public void utilityLevelOfCapacity(){
        nowCapacity = getNowCapacity();
        int percent = nowCapacity * 100 / maxCapacity;

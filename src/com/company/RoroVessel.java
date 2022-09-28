@@ -31,6 +31,7 @@ public class RoroVessel extends Vessel {
         return truck;
     }
 
+    //get-metode skal slettes
     public int getCargoAmount(){
         //sout skal slettes
         System.out.println(car + truck);
@@ -47,6 +48,7 @@ public class RoroVessel extends Vessel {
         System.out.println("Total amount: " + (car + truck));
     }
 
+    @Override
     public void utilityLevelOfCapacity(){
         int carLengthAmount = getCar() * carLength; //Samlet længde for alle bilerne 4*8
         int truckLengthAmount = getTruck() * truckLength; //SAmlet længde for alle trucks 2*30

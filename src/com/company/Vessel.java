@@ -16,4 +16,7 @@ public abstract class Vessel {
     // containervessel - capacity of containers -> udregn i procenttal.
     // roro  - numbers cars x meters, numbers trucks x meters / total capaciy of metersoflanes
     // capacity.. ?
+
+    //tilføjet abstrakt metode -> polymorphism
+    public abstract void utilityLevelOfCapacity();
 }

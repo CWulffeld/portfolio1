@@ -28,7 +28,6 @@ public containerVessel(String flagNation, int length, int width){
 
     //The method loadingCargo() is used to set relevant information for vessels
     // and make the cargo amount accessible through methods.
-
     public void loadingCargo(int numberOfContainers) {
         nowContainer = numberOfContainers;
 
@@ -44,6 +43,7 @@ public containerVessel(String flagNation, int length, int width){
     //should compute the fraction of the total capacity that is used.
     // For tankers a compartment is assumed to be utilized if it is not empty since it then cannot be used for other products.
 
+    @Override
     public void utilityLevelOfCapacity(){
     nowContainer = getNowContainer();
     int percent = nowContainer * 100 / maxContainer;
