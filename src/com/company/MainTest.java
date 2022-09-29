@@ -1,9 +1,5 @@
 package com.company;
-
 import org.junit.jupiter.api.Test;
-
-import java.util.function.BooleanSupplier;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -72,9 +68,6 @@ public class MainTest {
         Tankers t = new Tankers("DE", 15, 20, 20);
         assertEquals(10,t.getCompartments().length);
     }
-
-
-
 
 }
 

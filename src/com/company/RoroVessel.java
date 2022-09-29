@@ -24,7 +24,6 @@ public class RoroVessel extends Vessel {
     }
 
     public int getTruck() {
-
         return truck;
     }
 
