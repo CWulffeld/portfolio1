@@ -27,6 +27,8 @@ public class Main {
      t.loadingCargo(4,3);
         System.out.println();
      t.loadingCargo(1,1);
+        System.out.println();
+        t.loadingCargo(3,7);
         //System.out.println();
      //t.loadingCargo(9,54);
     // t.utilityLevelOfCapacity();
