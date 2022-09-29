@@ -3,6 +3,7 @@ package com.company;
 import java.util.Arrays;
 
 public class Tankers extends Vessel {
+    public int procent;
     private int compartments[] = new int[10];
 
     public Tankers(String flagNation, int aDraft, int length, int width) {
@@ -10,12 +11,14 @@ public class Tankers extends Vessel {
         super.aDraft = aDraft;
         super.length = length;
         super.width = width;
+        super.procent = procent;
     }
 
     public int[] getCompartments() {
         // System.out.println(Arrays.toString(compartments));
         return compartments;
     }
+
 
     public void loadingCargo(int compartmentsCapacity, int volumneLevel) {
 
@@ -34,14 +37,14 @@ public class Tankers extends Vessel {
     @Override
     public void utilityLevelOfCapacity() {
         int count = 0;
-        int percent = 0;
+        procent = 0;
 
         for (int com : compartments) {
             if (com == 0) {
                 count++;
-                percent = count * 100 / getCompartments().length;
+                procent = count * 100 / getCompartments().length;
             }
         }
-        System.out.println(percent + "% tomme compartments tilbage");
+        System.out.println(procent + "% tomme compartments tilbage");
     }
 }

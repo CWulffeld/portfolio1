@@ -26,9 +26,7 @@ public class Main {
 
         Tankers t = new Tankers("DE", 15, 20, 20);
         t.loadingCargo(4, 3);
-
         t.loadingCargo(0, 1);
-
         t.loadingCargo(3, 7);
         //System.out.println();
         //t.loadingCargo(9,54);
