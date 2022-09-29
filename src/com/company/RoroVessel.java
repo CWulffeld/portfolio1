@@ -22,8 +22,6 @@ public class RoroVessel extends Vessel {
     }
 
     public int getTruck() {
-        //sout skal slettes
-        System.out.println(truck);
         return truck;
     }
 
