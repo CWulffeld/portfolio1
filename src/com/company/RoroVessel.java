@@ -9,7 +9,7 @@ public class RoroVessel extends Vessel {
     private int truckLength = 30;
 
 
-    public RoroVessel(String flagNation,int aDraft , int length, int width,int totalAmountLaneMeters){
+    public RoroVessel(String flagNation, int aDraft, int length, int width, int totalAmountLaneMeters) {
         super.flagNation = flagNation;
         super.aDraft = aDraft;
         super.length = length;
@@ -26,25 +26,23 @@ public class RoroVessel extends Vessel {
         return truck;
     }
 
-    public void loadingCargo(int cars, int trucks){
-    this.car = cars;
-    this.truck = trucks;
+    public void loadingCargo(int cars, int trucks) {
+        this.car = cars;
+        this.truck = trucks;
     }
 
     @Override
-    public void utilityLevelOfCapacity(){
+    public void utilityLevelOfCapacity() {
         int carLengthAmount = getCar() * carLength; //Samlet længde for alle bilerne 4*8
         int truckLengthAmount = getTruck() * truckLength; //SAmlet længde for alle trucks 2*30
         int totalAmountLength = carLengthAmount + truckLengthAmount; //Samlet brugt laneMeters
-        //System.out.println("RORO Vessel amount length " + totalAmountLength);
 
-        double percent = totalAmountLength*100/totalAmountLaneMeters; //Procent andel som anvedes
+
+        double percent = totalAmountLength * 100 / totalAmountLaneMeters; //Procent andel som anvedes
         System.out.println("Procent RORO " + percent + " %");
 
 
     }
-
-
 
 
 }

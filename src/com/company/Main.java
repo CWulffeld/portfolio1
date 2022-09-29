@@ -3,7 +3,7 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
 //Container Vessel
 /*
@@ -23,15 +23,15 @@ public class Main {
 
 //Tankers
 
-     Tankers t = new Tankers("DE",15,20,20);
-     t.loadingCargo(4,3);
-        System.out.println();
-     t.loadingCargo(1,1);
-        System.out.println();
-        t.loadingCargo(3,7);
+        Tankers t = new Tankers("DE", 15, 20, 20);
+        t.loadingCargo(4, 3);
+
+        t.loadingCargo(0, 1);
+
+        t.loadingCargo(3, 7);
         //System.out.println();
-     //t.loadingCargo(9,54);
-    // t.utilityLevelOfCapacity();
+        //t.loadingCargo(9,54);
+        // t.utilityLevelOfCapacity();
         t.getCompartments();
         t.utilityLevelOfCapacity();
 
