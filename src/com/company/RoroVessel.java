@@ -31,16 +31,17 @@ public class RoroVessel extends Vessel {
     public void loadingCargo(int cars, int trucks) {
         this.car = cars;
         this.truck = trucks;
+        System.out.println("Antallet af Cars: " + cars + ", Antallet af Trucks: " + trucks);
     }
 
     @Override
     public void utilityLevelOfCapacity() {
         int carLengthAmount = getCar() * carLength; //Samlet længde for alle bilerne 4*8
         int truckLengthAmount = getTruck() * truckLength; //SAmlet længde for alle trucks 2*30
-        int totalAmountLength = carLengthAmount + truckLengthAmount; //Samlet brugt laneMeters
+        int totalAmountCarTruck = carLengthAmount + truckLengthAmount; //Samlet brugt laneMeters
 
-        procent = totalAmountLength * 100 / totalAmountLaneMeters; //Procent andel som anvedes
-        System.out.println("Procent RORO " + procent + " %");
+        procent = totalAmountCarTruck * 100 / totalAmountLaneMeters; //Procent andel som anvedes
+        System.out.println("Andelen af fyldt Lanemeter: " + procent + "%");
 
 
     }

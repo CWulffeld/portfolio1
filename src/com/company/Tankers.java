@@ -29,10 +29,13 @@ public class Tankers extends Vessel {
         }*/
 
         compartments[compartmentsCapacity] += volumneLevel;
-      /*  for (int com : compartments) {
+        System.out.print("Compartments: ");
+      for (int com : compartments) {
             System.out.print(com);
-        }*/
+        }
+
     }
+
 
     @Override
     public void utilityLevelOfCapacity() {
@@ -45,6 +48,6 @@ public class Tankers extends Vessel {
                 procent = count * 100 / getCompartments().length;
             }
         }
-        System.out.println(procent + "% tomme compartments tilbage");
+        System.out.println("Andelen af tomme copartments: " + procent + "%");
     }
 }

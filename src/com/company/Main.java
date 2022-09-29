@@ -6,53 +6,25 @@ public class Main {
     public static void main(String[] args) {
 
 //Container Vessel
-
+        System.out.println("ContainerVessel:");
         containerVessel c = new containerVessel("DK",10,20);
         c.loadingCargo(4);
-        c.loadingCargo(7);
-        System.out.println(c.getNowContainer());
         c.utilityLevelOfCapacity();
-/*
-      containerVessel c = new containerVessel("DK", 10,10);
-       c.getNowContainer();
 
-        c.loadingCargo(6);
-        c.getNowContainer();
 
-        c.loadingCargo(2);
-        c.getNowContainer();
-*/
 //Tankers
-
+        System.out.println("Tankers: ");
         Tankers t = new Tankers("DE", 15, 20, 20);
         t.loadingCargo(4, 3);
-        t.loadingCargo(0, 1);
-        t.loadingCargo(3, 7);
-        //System.out.println();
-        //t.loadingCargo(9,54);
-        // t.utilityLevelOfCapacity();
-        t.getCompartments();
+        System.out.println();
         t.utilityLevelOfCapacity();
 
 
-
-        RoroVessel r= new RoroVessel("DK",10,10,10,300);
-        r.getCar();
-        r.getTruck();
-        //r.getCargoAmount();
+//RoroVessel
+        System.out.println("RoroVessel:");
+        RoroVessel r = new RoroVessel("DK",10,10,10,300);
         r.loadingCargo(3,6);
         r.utilityLevelOfCapacity();
-
-
-
-
-/*
-        Vessel roro = new RoroVessel();
-        roro.loadingCargo(5,5);
-
-        Vessel t = new containerVessel();
-*/
-
 
     }
 }

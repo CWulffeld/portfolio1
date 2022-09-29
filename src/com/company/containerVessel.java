@@ -23,8 +23,9 @@ public class containerVessel extends Vessel {
         if (numberOfContainers < maxContainer && numberOfContainers > 0) {
             nowContainer = numberOfContainers;
         } else {
-            System.out.println("Amount of containers not available. Max. capacity: 10, min. capacity: 0");
+            System.out.println("Antallet af containere ikke muligt. Max. kapacitet: 10, Min. kapacitet: 0");
         }
+        System.out.println("Antallet af Containere: " + numberOfContainers);
     }
 
 
@@ -32,6 +33,10 @@ public class containerVessel extends Vessel {
     public void utilityLevelOfCapacity() {
         nowContainer = getNowContainer();
         this.procent = nowContainer * 100 / maxContainer;
-        System.out.println("Procent " + this.procent + " %");
+        System.out.println("Andelen af ContainerVessel der er fyldt: " + this.procent + "%");
     }
+
+
 }
+
+
