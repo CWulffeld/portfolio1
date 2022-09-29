@@ -17,7 +17,7 @@ public class containerVessel extends Vessel {
     }
 
 
-    public void loadingCargo(int numberOfContainers) {
+    public void loadingCargo(int numberOfContainers){
         if (numberOfContainers < maxContainer && numberOfContainers > 0) {
             nowContainer = numberOfContainers;
         } else {
