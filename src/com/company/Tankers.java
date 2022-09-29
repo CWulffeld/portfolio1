@@ -15,13 +15,15 @@ public class Tankers extends Vessel {
     }
 
     public int[] getCompartments() {
-        // System.out.println(Arrays.toString(compartments));
+        //System.out.println(Arrays.toString(compartments)); - Kan være nyttigt, hvis arrayet skal printes til terminalen
+
         return compartments;
     }
 
     public void loadingCargo(int compartmentsCapacity, int volumneLevel) {
-       /* if (compartmentsCapacity > 10) {
-            System.out.println("The tankers have 1-10 comparments");
+      /*
+       if (compartmentsCapacity > 10) {
+            System.out.println("Tankeren har 1-10 comparments");
         }else if(compartmentsCapacity<1){
                 System.out.println("The tankers have 1-10 comparments");
         }*/
@@ -37,7 +39,6 @@ public class Tankers extends Vessel {
     public void utilityLevelOfCapacity() {
         int count = 0;
         procent = 0;
-
         for (int com : compartments) {
             if (com == 0) {
                 count++;

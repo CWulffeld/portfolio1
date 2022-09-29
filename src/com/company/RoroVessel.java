@@ -36,13 +36,9 @@ public class RoroVessel extends Vessel {
 
     @Override
     public void utilityLevelOfCapacity() {
-        int carLengthAmount = getCar() * carLength; //Samlet længde for alle bilerne 4*8
-        int truckLengthAmount = getTruck() * truckLength; //SAmlet længde for alle trucks 2*30
-        int totalAmountCarTruck = carLengthAmount + truckLengthAmount; //Samlet brugt laneMeters
-
+        int totalAmountCarTruck = (getCar()*carLength) + (getTruck() * truckLength);
         procent = totalAmountCarTruck * 100 / totalAmountLaneMeters; //Procent andel som anvedes
         System.out.println("Andelen af fyldt Lanemeter: " + procent + "%");
-
     }
 
 }
