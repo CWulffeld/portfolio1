@@ -1,55 +1,54 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class Tankers extends Vessel{
-
-
-    private int compartments;
-    private int nowCapacity;
-    private int maxCapacity;
-    private int maxCompartment;
-    private int minComparment;
-    private int volume[] = new int[9];
-
-
-
-   public Tankers (String flagNation,int aDraft , int length, int width,int compartment, int nowCapacity, int maxCapacity){
+    private int compartments[] = new int[10];
+    
+   public Tankers (String flagNation,int aDraft , int length, int width){
         super.flagNation = flagNation;
         super.aDraft = aDraft;
         super.length = length;
         super.width = width;
-        this.compartments = compartment;
-        this.nowCapacity = nowCapacity;
-        this.maxCapacity = maxCapacity;
-        this.maxCompartment = 10;
-        this.minComparment = 1;
+    }
+    
+    public int[] getCompartments() {
+       System.out.println(Arrays.toString(compartments));
+        return compartments;
     }
 
-    public int getCompartments() {
-       return compartments;
-    }
 
-    public int getNowCapacity(){
-        System.out.println(nowCapacity);
-        return nowCapacity;
-    }
+    public void loadingCargo(int compartmentsCapacity, int volumneLevel){
+        if (compartmentsCapacity > 10 ){
+            System.out.println("The tankers have 1-10 comparments");
+        }
 
-    public void loadingCargo(int numberOfCompartment, int nowCapacity){
-      this.compartments = numberOfCompartment; //Sætter nummeret af comparments
-      this.nowCapacity = nowCapacity; //sætter nummeret af nowcapacity
-
-        //nedenstående slettes
-        int freeCapacityAmount = maxCapacity - nowCapacity;
-        System.out.println("Max capacity on TV: " + maxCapacity);
-        System.out.println("amount of compartments on tankers are filled: " + compartments);
-        System.out.println("amount of compartments left on tankers: " + freeCapacityAmount);
-        System.out.println("Amount of compartments used " + (maxCompartment - compartments)); //total amount of comparmemt used
+        compartments[compartmentsCapacity] += volumneLevel;
+        for (int com: compartments) {
+            System.out.print(com);
+        }
     }
 
     @Override
     public void utilityLevelOfCapacity(){
-       nowCapacity = getNowCapacity();
-       int percent = nowCapacity * 100 / maxCapacity;
-        System.out.println("Procent" + percent + "%");
+       int count = 0;
+
+       for (int com: compartments){
+           if(com == 0){
+               System.out.println("test");
+               count++;
+               System.out.println(count);
+           }
+       }
+
+       //int percent = count*100/get
+
+
+
+
+       // nowCapacity = getNowCapacity();
+    //   int percent = nowCapacity * 100 / maxCapacity;
+      //  System.out.println("Procent" + percent + "%");
 
 
     }
