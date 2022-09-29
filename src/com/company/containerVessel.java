@@ -4,12 +4,14 @@ public class containerVessel extends Vessel {
     private int nowContainer;
     private int maxContainer;
 
+
     //Constructor
     public containerVessel(String flagNation, int length, int width) {
         super.flagNation = flagNation; //Fra Vessel (super klassen)
         super.length = length; //Fra Vessel (super klassen)
         super.width = width; //Fra Vessel (super klassen
         this.maxContainer = 10; // Specifik nummer til maxContainer
+
     }
 
     public int getNowContainer() {
