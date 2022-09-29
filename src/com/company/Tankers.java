@@ -19,15 +19,12 @@ public class Tankers extends Vessel {
         return compartments;
     }
 
-
     public void loadingCargo(int compartmentsCapacity, int volumneLevel) {
-
        /* if (compartmentsCapacity > 10) {
             System.out.println("The tankers have 1-10 comparments");
         }else if(compartmentsCapacity<1){
                 System.out.println("The tankers have 1-10 comparments");
         }*/
-
         compartments[compartmentsCapacity] += volumneLevel;
         System.out.print("Compartments: ");
       for (int com : compartments) {
@@ -35,7 +32,6 @@ public class Tankers extends Vessel {
         }
 
     }
-
 
     @Override
     public void utilityLevelOfCapacity() {

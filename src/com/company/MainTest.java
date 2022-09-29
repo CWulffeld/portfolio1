@@ -13,8 +13,9 @@ public class MainTest {
 
     }
 
+    //Tester LoadingCargo()
     @Test
-    void IndexMatchTankers() {
+    void testLoadingCargoTankers() {
         Tankers tanker = new Tankers("DE", 15, 20, 20);
         tanker.loadingCargo(5,6);
         int[] tankerCompartments = tanker.getCompartments();
@@ -30,12 +31,6 @@ public class MainTest {
     }
 
     @Test
-    void testGetCompartmentsTankers(){
-        Tankers t = new Tankers("DE", 15, 20, 20);
-        assertEquals(10,t.getCompartments().length);
-    }
-
-    @Test
     void testLoadingCargoRORO(){
         RoroVessel RR = new RoroVessel("DK",10,10,10,300);
         RR.loadingCargo(3,6);
@@ -44,6 +39,8 @@ public class MainTest {
     }
 
 
+
+    //Tester utilityLevelOfCapacity()
     @Test
     void testUtilityCV(){
         containerVessel c = new containerVessel("DK",10,20);
@@ -67,6 +64,13 @@ public class MainTest {
         RORO.utilityLevelOfCapacity();
         assertEquals(12,RORO.procent);
 
+    }
+
+    //Tester at længden på Array er som forventet (Klassen)
+    @Test
+    void testGetCompartmentsTankers(){
+        Tankers t = new Tankers("DE", 15, 20, 20);
+        assertEquals(10,t.getCompartments().length);
     }
 
 

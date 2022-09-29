@@ -43,8 +43,6 @@ public class RoroVessel extends Vessel {
         procent = totalAmountCarTruck * 100 / totalAmountLaneMeters; //Procent andel som anvedes
         System.out.println("Andelen af fyldt Lanemeter: " + procent + "%");
 
-
     }
-
 
 }
