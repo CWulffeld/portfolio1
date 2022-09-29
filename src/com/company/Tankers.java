@@ -11,7 +11,7 @@ public class Tankers extends Vessel{
         super.length = length;
         super.width = width;
     }
-    
+
     public int[] getCompartments() {
       // System.out.println(Arrays.toString(compartments));
         return compartments;

@@ -18,6 +18,7 @@ public class RoroVessel extends Vessel {
     }
 
     public int getCar() {
+
         return car;
     }
 
