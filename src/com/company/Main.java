@@ -8,7 +8,7 @@ public class Main {
 //Container Vessel
 
         containerVessel c = new containerVessel("DK",10,20);
-        c.loadingCargo(4);
+        c.loadingCargo(11);
         c.utilityLevelOfCapacity();
 /*
       containerVessel c = new containerVessel("DK", 10,10,10);
@@ -27,7 +27,7 @@ public class Main {
      c.utilityLevelOfCapacity();
 */
 
-
+/*
         RoroVessel r= new RoroVessel("DK",10,10,10,300);
         r.getCar();
         r.getTruck();

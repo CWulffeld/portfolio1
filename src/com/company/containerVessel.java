@@ -29,13 +29,19 @@ public containerVessel(String flagNation, int length, int width){
     //The method loadingCargo() is used to set relevant information for vessels
     // and make the cargo amount accessible through methods.
     public void loadingCargo(int numberOfContainers) {
-        nowContainer = numberOfContainers;
+
+    if(numberOfContainers < maxContainer && numberOfContainers>0){
+            nowContainer = numberOfContainers;
+    }else{
+            System.out.println("Amount of containers not availible. Max capacity: 10, min capacity: 0");
+        }
 
         //linjer forneden skal slettes
+        /*
        int containerAmount = maxContainer - nowContainer;
         System.out.println("Max capacity on CV: " + maxContainer);
         System.out.println("Amount of Containers on CV: " + nowContainer);
-        System.out.println("Amount of containers left CV: " + containerAmount);
+        System.out.println("Amount of containers left CV: " + containerAmount);*/
 
     }
 
