@@ -8,7 +8,8 @@ public class Main {
 //Container Vessel
 
         containerVessel c = new containerVessel("DK",10,20);
-        c.loadingCargo(11);
+        c.loadingCargo(4);
+        c.loadingCargo(7);
         c.utilityLevelOfCapacity();
 /*
       containerVessel c = new containerVessel("DK", 10,10,10);

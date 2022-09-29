@@ -12,7 +12,7 @@ public containerVessel(String flagNation, int length, int width){
     super.length = length; //Fra Vessel (super klassen)
     super.width = width; //Fra Vessel (super klassen)
     this.nowContainer = nowContainer; //Er dette overhovedet nædvendigt, dette sættes i loadingCargi metode
-    this.maxContainer = 10;
+    this.maxContainer = 10; // Specifik nummer til maxContainer
 
     //?? hvad skal vi bruge container length og width til??
     this.containerLength = 10;
@@ -33,7 +33,7 @@ public containerVessel(String flagNation, int length, int width){
     if(numberOfContainers < maxContainer && numberOfContainers>0){
             nowContainer = numberOfContainers;
     }else{
-            System.out.println("Amount of containers not availible. Max capacity: 10, min capacity: 0");
+            System.out.println("Amount of containers not available. Max. capacity: 10, min. capacity: 0");
         }
 
         //linjer forneden skal slettes
