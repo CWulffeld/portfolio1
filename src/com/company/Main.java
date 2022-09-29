@@ -22,11 +22,17 @@ public class Main {
         c.getNowContainer();*/
 
 //Tankers
-        /*
-     Tankers t = new Tankers("DE", 10, 10, 10,8);
+
+     Tankers t = new Tankers("DE",15,20,20);
      t.loadingCargo(4,3);
-     c.utilityLevelOfCapacity();
-*/
+        System.out.println();
+     t.loadingCargo(1,1);
+        //System.out.println();
+     //t.loadingCargo(9,54);
+    // t.utilityLevelOfCapacity();
+        t.getCompartments();
+        t.utilityLevelOfCapacity();
+
 
 /*
         RoroVessel r= new RoroVessel("DK",10,10,10,300);
