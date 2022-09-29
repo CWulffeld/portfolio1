@@ -6,23 +6,23 @@ public class Main {
     public static void main(String[] args) {
 
 //Container Vessel
-/*
+
         containerVessel c = new containerVessel("DK",10,20);
         c.loadingCargo(4);
         c.loadingCargo(7);
         c.utilityLevelOfCapacity();
 /*
-      containerVessel c = new containerVessel("DK", 10,10,10);
+      containerVessel c = new containerVessel("DK", 10,10);
        c.getNowContainer();
 
         c.loadingCargo(6);
         c.getNowContainer();
 
         c.loadingCargo(2);
-        c.getNowContainer();*/
-
+        c.getNowContainer();
+*/
 //Tankers
-
+/*
         Tankers t = new Tankers("DE", 15, 20, 20);
         t.loadingCargo(4, 3);
 
@@ -35,7 +35,7 @@ public class Main {
         t.getCompartments();
         t.utilityLevelOfCapacity();
 
-
+*/
 /*
         RoroVessel r= new RoroVessel("DK",10,10,10,300);
         r.getCar();
